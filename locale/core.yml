@@ -111,8 +111,7 @@ core:
 
     # These translations are used in the modal dialog displayed when loading extensions.
     loading:
-      title: Please Wait...
-
+      title: Prosím čekejte…
     # These translations are used in the navigation bar.
     nav:
       appearance_button: Appearance
@@ -238,15 +237,15 @@ core:
 
     # These translations are used in the Edit User modal dialog (admin function).
     edit_user:
-      activate_button: Activate User
+      activate_button: Aktivovat uživatele
       email_heading: => core.ref.email
       email_label: => core.ref.email
-      groups_heading: Groups
+      groups_heading: Skupiny
       password_heading: => core.ref.password
       password_label: => core.ref.password
       set_password_label: Set new password
       submit_button: => core.ref.save_changes
-      title: Edit User
+      title: Upravit uživatele
       username_heading: => core.ref.username
       username_label: => core.ref.username
 
@@ -254,37 +253,37 @@ core:
     forgot_password:
       dismiss_button: => core.ref.okay
       email_placeholder: => core.ref.email
-      email_sent_message: We've sent you an email containing a link to reset your password. Check your spam folder if you don't receive it within the next minute or two.
-      not_found_message: There is no user registered with that email address.
-      submit_button: Recover Password
-      text: Enter your email address and we will send you a link to reset your password.
-      title: Forgot Password
+      email_sent_message: "Zaslali jsme ti email s odkazem na změnu hesla. Pokud jsi ho neobdržel, podívej se do spamu."
+      not_found_message: Tato emailová adresa není v naší databázi.
+      submit_button: Obnovit heslo
+      text: Zadej svou emailovou adresu a my ti pošleme email s odkazem na jeho resetování.
+      title: Zapomenuté heslo.
 
     # These translations are used in the header and session dropdown menu.
     header:
-      admin_button: Administration
+      admin_button: Administrace
       log_in_link: => core.ref.log_in
       log_out_button: => core.ref.log_out
-      profile_button: Profile
-      search_placeholder: Search Forum
+      profile_button: Profil.
+      search_placeholder: Prohledat fórum
       settings_button: => core.ref.settings
       sign_up_link: => core.ref.sign_up
 
     # These translations are used on the index page, peripheral to the discussion list.
     index:
       all_discussions_link: => core.ref.all_discussions
-      cannot_start_discussion_button: Can't Start Discussion
-      mark_all_as_read_confirmation: "Are you sure you want to mark all discussions as read?"
+      cannot_start_discussion_button: "Nemůžeš založit diskuzi"
+      mark_all_as_read_confirmation: "Opravdu chceš všechny diskuze označit jako přečtené?"
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
       refresh_tooltip: Refresh
       start_discussion_button: => core.ref.start_a_discussion
 
     # These translations are used by the sorting control above the discussion list.
     index_sort:
-      latest_button: Latest
-      newest_button: Newest
-      oldest_button: Oldest
-      relevance_button: Relevance
+      latest_button: Nejaktuálnější
+      newest_button: Nejnovější
+      oldest_button: Nejstarší
+      relevance_button: Rele
       top_button: Top
 
     # These translations are used in the Log In modal dialog.
@@ -528,7 +527,7 @@ core:
     save_changes: Uložit změny                   # Referenced by flarum-suspend.yml, flarum-tags.yml
     settings: Nastavení
     sign_up: Registrovat se
-    some_others: "{count} další|{count} další|{count} dalších"   # Referenced by flarum-likes.yml, flarum-mentions.yml
+    some_others: "{count} další|{count} další"   # Referenced by flarum-likes.yml, flarum-mentions.yml
     start_a_discussion: Začít diskutovat
     username: Přezdívka
     write_a_reply: Odpovědět…
