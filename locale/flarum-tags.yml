@@ -13,14 +13,14 @@ flarum-tags:
 
     # These translations are used in the Edit Tag modal dialog.
     edit_tag:
-      color_label: Color
-      delete_tag_button: Delete Tag
-      delete_tag_confirmation: "Are you sure you want to delete this tag? The tag's discussions will NOT be deleted."
-      description_label: Description
-      hide_label: Hide from All Discussions
+      color_label: Barva
+      delete_tag_button: Smazat štítek
+      delete_tag_confirmation: "Opravdu chceš smazat tento štítek? Témata jím označená smazána NEBUDOU."
+      description_label: Popis
+      hide_label: Skrýt z přehledu témat
       name_label: => flarum-tags.ref.name
       name_placeholder: => flarum-tags.ref.name
-      slug_label: Slug
+      slug_label: Adresa
       submit_button: => core.ref.save_changes
       title: => flarum-tags.ref.create_tag
 
@@ -31,7 +31,7 @@ flarum-tags:
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
-      allow_edit_tags_label: Allow tag editing
+      allow_edit_tags_label: Povolit úpravu štítků
       restrict_by_tag_heading: Restrict by Tag
       tag_discussions_label: Tag discussions
 
@@ -42,53 +42,53 @@ flarum-tags:
       required_primary_text: Enter the minimum and maximum number of primary tags that may be applied to a discussion.
       required_secondary_heading: Required Number of Secondary Tags
       required_secondary_text: Enter the minimum and maximum number of secondary tags that may be applied to a discussion.
-      title: Tag Settings
+      title: Nastavení štítků
 
     # These translations are used in the Tags page.
     tags:
       about_tags_text: "Tags are used to categorize discussions. Primary tags are like traditional forum categories: they can be arranged in a two-level hierarchy. Secondary tags do not have hierarchy or order, and are useful for micro-categorization."
       create_tag_button: => flarum-tags.ref.create_tag
-      primary_heading: Primary Tags
-      secondary_heading: Secondary Tags
-      settings_button: Settings
+      primary_heading: Hlavní štítky
+      secondary_heading: Vedlejší štítky
+      settings_button: Nastavení
 
   # Translations in this namespace are used by the forum user interface.
   forum:
 
     # These translations are used by the Choose Tags modal dialog.
     choose_tags:
-      choose_primary_placeholder: "Choose a primary tag|Choose {count} primary tags"
-      choose_secondary_placeholder: "Choose 1 more tag|Choose {count} more tags"
-      edit_title: "Edit Tags for {title}"
+      choose_primary_placeholder: "Zvol hlavní štítek|Zvol {count} hlavní štítky|Zvol {count} hlavních štítků"
+      choose_secondary_placeholder: "Přidej ještě jeden štítek|Přidej ještě {count} štítky|Přidej ještě {count} štítků"
+      edit_title: "Úprava štítků tématu {title}"
       submit_button: => core.ref.okay
-      title: Choose Tags for Your Discussion
+      title: Volba štítků tvého tématu
 
     # These translations are used by the composer when starting a discussion.
     composer_discussion:
-      choose_tags_link: Choose Tags
+      choose_tags_link: Zvol štítky
 
     # These translations are used by the discussion control buttons.
     discussion_controls:
-      edit_tags_button: Edit Tags
+      edit_tags_button: Upravit štítky
 
     # These translations are used on the index page, peripheral to the discussion list.
     index:
-      more_link: More...
+      more_link: Více…
       tags_link: => flarum-tags.ref.tags
-      untagged_link: Untagged
+      untagged_link: Beze štítku
 
     # These translations are displayed between posts in the post stream.
     post_stream:
-      added_tags_text: "{username} added the {tagsAdded}."
-      added_and_removed_tags_text: "{username} added the {tagsAdded} and removed the {tagsRemoved}."
-      removed_tags_text: "{username} removed the {tagsRemoved}."
-      tags_text: "{tags} tag|{tags} tags"
+      added_tags_text: "{username} přidal {tagsAdded}."
+      added_and_removed_tags_text: "{username} přidal {tagsAdded} a odebral {tagsRemoved}."
+      removed_tags_text: "{username} odebral {tagsRemoved}."
+      tags_text: "štítek {tags}|štítky {tags}"
 
   # Translations in this namespace are used by the forum and admin interfaces.
   lib:
 
     # This translation is displayed in place of the name of a tag that's been deleted.
-    deleted_tag_text: Deleted
+    deleted_tag_text: Smazaný štítek
 
   ##
   # REUSED TRANSLATIONS - These keys should not be used directly in code!
@@ -96,6 +96,6 @@ flarum-tags:
 
   # Translations in this namespace are referenced by two or more unique keys.
   ref:
-    create_tag: Create Tag
-    name: Name
-    tags: Tags
+    create_tag: Vytvořit štítek
+    name: Název
+    tags: Štítky
