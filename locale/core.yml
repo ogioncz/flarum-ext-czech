@@ -203,17 +203,17 @@ core:
 
     # These translations are used by the composer when editing a post.
     composer_edit:
-      discard_confirmation: "You have not saved your changes. Do you wish to discard them?"
-      post_link: "Post #{number} in {discussion}"
+      discard_confirmation: "Neuložil jsi své změny. Chceš je zahodit?"
+      post_link: "Příspšvek č. {number} v {discussion}"
       submit_button: => core.ref.save_changes
 
     # These translations are used by the composer when replying to a discussion.
     composer_reply:
       body_placeholder: => core.ref.write_a_reply
-      discard_confirmation: "You have not posted your reply. Do you wish to discard it?"
-      posted_message: Your reply was posted.
-      submit_button: Post Reply
-      view_button: View
+      discard_confirmation: "Ještě jsi odpověď neodeslal. Chceš ji zahodit?"
+      posted_message: Tvá odpověď byla odeslána.
+      submit_button: Odpovědět
+      view_button: Zobrazit
 
     # These translations are used by the discussion control buttons.
     discussion_controls:
@@ -232,12 +232,12 @@ core:
       empty_text: It looks like there are no discussions here.
       load_more_button: => core.ref.load_more
       mark_as_read_tooltip: Mark as Read
-      replied_text: "{username} replied {ago}"
-      started_text: "{username} started {ago}"
+      replied_text: "{username} odpověděl {ago}"
+      started_text: "{username} začal {ago}"
 
     # These translations are used in the Edit User modal dialog (admin function).
     edit_user:
-      activate_button: Aktivovat uživatele
+      activate_button: Aktivovat účet
       email_heading: => core.ref.email
       email_label: => core.ref.email
       groups_heading: Skupiny
@@ -245,7 +245,7 @@ core:
       password_label: => core.ref.password
       set_password_label: Set new password
       submit_button: => core.ref.save_changes
-      title: Upravit uživatele
+      title: Upravit účet
       username_heading: => core.ref.username
       username_label: => core.ref.username
 
@@ -253,18 +253,18 @@ core:
     forgot_password:
       dismiss_button: => core.ref.okay
       email_placeholder: => core.ref.email
-      email_sent_message: "Zaslali jsme ti email s odkazem na změnu hesla. Pokud jsi ho neobdržel, podívej se do spamu."
-      not_found_message: Tato emailová adresa není v naší databázi.
+      email_sent_message: "Zaslali jsme ti e-mail s odkazem na změnu hesla. Pokud jsi ho neobdržel, podívej se do spamu."
+      not_found_message: Tato e-mailová adresa není v naší databázi.
       submit_button: Obnovit heslo
-      text: Zadej svou emailovou adresu a my ti pošleme email s odkazem na jeho resetování.
-      title: Zapomenuté heslo.
+      text: Zadej svou e-mailovou adresu a my ti pošleme e-mail s odkazem na jeho resetování.
+      title: Zapomenuté heslo
 
     # These translations are used in the header and session dropdown menu.
     header:
       admin_button: Administrace
       log_in_link: => core.ref.log_in
       log_out_button: => core.ref.log_out
-      profile_button: Profil.
+      profile_button: Profil
       search_placeholder: Prohledat fórum
       settings_button: => core.ref.settings
       sign_up_link: => core.ref.sign_up
@@ -275,7 +275,7 @@ core:
       cannot_start_discussion_button: "Nemůžeš založit diskuzi"
       mark_all_as_read_confirmation: "Opravdu chceš všechny diskuze označit jako přečtené?"
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
-      refresh_tooltip: Refresh
+      refresh_tooltip: Obnovit
       start_discussion_button: => core.ref.start_a_discussion
 
     # These translations are used by the sorting control above the discussion list.
@@ -283,8 +283,8 @@ core:
       latest_button: Nejaktuálnější
       newest_button: Nejnovější
       oldest_button: Nejstarší
-      relevance_button: Rele
-      top_button: Top
+      relevance_button: Nejrelevantnější
+      top_button: Nejlepší
 
     # These translations are used in the Log In modal dialog.
     log_in:
@@ -299,8 +299,8 @@ core:
 
     # These translations are used by the Notifications dropdown, a.k.a. "the bell".
     notifications:
-      discussion_renamed_text: "{username} changed the title"
-      empty_text: No Notifications
+      discussion_renamed_text: "{username} změnil nadpis"
+      empty_text: Žádná oznámení
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
       title: => core.ref.notifications
       tooltip: => core.ref.notifications
@@ -308,8 +308,8 @@ core:
     # These translations are used by tooltips displayed for individual posts.
     post:
       edited_text: Edited
-      edited_tooltip: "{username} edited {ago}"
-      number_tooltip: "Post #{number}"
+      edited_tooltip: "{username} upravil {ago}"
+      number_tooltip: "Příspěvek č. {number}"
 
     # These translations are used by the post control buttons.
     post_controls:
@@ -321,17 +321,17 @@ core:
     # These translations are used in the scrubber to the right of the post stream.
     post_scrubber:
       now_link: Now
-      original_post_link: Original Post
-      unread_text: "{count} unread"
-      viewing_text: "{index} of {count} post|{index} of {count} posts"
+      original_post_link: Úvodní příspěvek
+      unread_text: "{count} nepřečtený|{count} nepřečtené|{count} nepřečtených"
+      viewing_text: "{index} z {count} příspěvku|{index} ze {count} příspěvků|{index} z {count} příspěvků"
 
     # These translations are displayed between posts in the post stream.
     post_stream:
-      discussion_renamed_old_tooltip: 'The old title was: "{old}"'
-      discussion_renamed_text: "{username} changed the title to {new}."
+      discussion_renamed_old_tooltip: 'Původní nadpis byl: „{old}“'
+      discussion_renamed_text: "{username} změnil nadpis na {new}."
       load_more_button: => core.ref.load_more
       reply_placeholder: => core.ref.write_a_reply
-      time_lapsed_text: "{period} later"
+      time_lapsed_text: "{period} později"
 
     # These translations are used by the rename discussion modal.
     rename_discussion:
@@ -340,21 +340,21 @@ core:
 
     # These translations are used by the search results dropdown list.
     search:
-      all_discussions_button: 'Search all discussions for "{query}"'
+      all_discussions_button: 'Hledat „{query}“ ve všech diskusích'
       discussions_heading: => core.ref.discussions
-      users_heading: Users
+      users_heading: Uživatelé
 
     # These translations are used in the Settings page.
     settings:
-      account_heading: Account
+      account_heading: Účet
       change_email_button: => core.ref.change_email
       change_password_button: => core.ref.change_password
       notifications_heading: => core.ref.notifications
       notify_by_email_heading: => core.ref.email
       notify_by_web_heading: Web
-      notify_discussion_renamed_label: Someone renames a discussion I started
-      privacy_disclose_online_label: Allow others to see when I am online
-      privacy_heading: Privacy
+      notify_discussion_renamed_label: Někdo přejmenuje diskusi, kterou jsem začal
+      privacy_disclose_online_label: Umožnit ostatním uživatelům vidět, že jsem on-line
+      privacy_heading: Soukromí
       title: => core.ref.settings
 
     # These translations are used in the Sign Up modal dialog.
@@ -366,20 +366,20 @@ core:
       submit_button: => core.ref.sign_up
       title: => core.ref.sign_up
       username_placeholder: => core.ref.username
-      welcome_text: "Welcome, {username}!"
+      welcome_text: "Vítej, uživateli {username}!"
 
     # These translations are used in the user profile page and profile popup.
     user:
-      avatar_remove_button: Remove
-      avatar_upload_button: Upload
-      avatar_upload_tooltip: Upload a new avatar
-      bio_placeholder: Write something about yourself
+      avatar_remove_button: Odebrat
+      avatar_upload_button: Nahrát
+      avatar_upload_tooltip: Nahrát nový avatar
+      bio_placeholder: Napiš něco o sobě
       discussions_link: => core.ref.discussions
-      in_discussion_text: "In {discussion}"
-      joined_date_text: "Joined {ago}"
-      online_text: Online
+      in_discussion_text: "V {discussion}"
+      joined_date_text: "Připojil se {ago}"
+      online_text: On-line
       posts_load_more_button: => core.ref.load_more
-      posts_link: Posts
+      posts_link: Příspěvky
       settings_link: => core.ref.settings
 
     # These translations are found on the user profile page (admin function).
@@ -392,8 +392,8 @@ core:
     # These translations are used in the alert that is shown when a new user has not confirmed their email address.
     user_email_confirmation:
       alert_message: => core.ref.confirmation_email_sent
-      resend_button: Resend Confirmation Email
-      sent_message: Sent
+      resend_button: Znovu odeslat potvrzovací zprávu
+      sent_message: Odesláno
 
   # Translations in this namespace are used by the forum and admin interfaces.
   lib:
@@ -404,11 +404,11 @@ core:
 
     # These translations are used to modify usernames.
     username:
-      deleted_text: "[deleted]"
+      deleted_text: "[smazaný]"
 
     # These translations are displayed as error messages.
     error:
-      generic_message: "Oops! Something went wrong. Please reload the page and try again."
+      generic_message: "Jejda, něco se pokazilo. Obnov prosím stránku a zkus to znovu."
       not_found_message: The requested resource was not found.
       permission_denied_message: You do not have permission to do that.
       rate_limit_exceeded_message: You're going a little too quickly. Please try again in a few seconds.
@@ -421,8 +421,8 @@ core:
     # These translations are used to punctuate a series of items.
     series:
       glue_text: ", "
-      three_text: "{first}, {second}, and {third}"
-      two_text: "{first} and {second}"
+      three_text: "{first}, {second} a {third}"
+      two_text: "{first} a {second}"
 
   # Translations in this namespace are used in views other than Flarum's normal JS client.
   views:
@@ -431,12 +431,12 @@ core:
     content:
       javascript_disabled_message: This site is best viewed in a modern browser with JavaScript enabled.
       load_error_message: Something went wrong while trying to load the full version of this site.
-      loading_text: Loading...
+      loading_text: Načítání…
 
     # Translations in this namespace are displayed in the basic HTML discussion view.
     discussion:
       next_page_button: => core.ref.next_page
-      previous_page_button: Previous Page
+      previous_page_button: Předchozí stránka
 
     # Translations in this namespace are displayed by the basic HTML discussion index.
     index:
@@ -447,12 +447,12 @@ core:
     reset:
       confirm_password_label: => core.ref.confirm_password
       password_label: => core.ref.password
-      submit_button: Reset Password
+      submit_button: Obnovit heslo
       title: => core.ref.reset_your_password
 
   # Translations in this namespace are used in messages output by the API.
   api:
-    invalid_username_message: "The username may only contain letters, numbers, and dashes."
+    invalid_username_message: "Přezdívka smí obsahovat pouze písmena, čísla a pomlčky."
 
   # Translations in this namespace are used in emails sent by the forum.
   email:
@@ -527,7 +527,7 @@ core:
     save_changes: Uložit změny                   # Referenced by flarum-suspend.yml, flarum-tags.yml
     settings: Nastavení
     sign_up: Registrovat se
-    some_others: "{count} další|{count} další"   # Referenced by flarum-likes.yml, flarum-mentions.yml
+    some_others: "{count} další|{count} další|{count} dalších"   # Referenced by flarum-likes.yml, flarum-mentions.yml
     start_a_discussion: Začít diskutovat
     username: Přezdívka
     write_a_reply: Odpovědět…
