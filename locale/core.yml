@@ -16,8 +16,8 @@ core:
 
     # These translations are used in the Appearance page.
     appearance:
-      colored_header_label: Colored Header
-      colors_heading: Colors
+      colored_header_label: Barevný header
+      colors_heading: Barvy
       colors_text: "Choose two colors to theme your forum with. The first will be used as a highlight color, while the second will be used to style background elements."
       custom_header_heading: Custom Header
       custom_header_text: "Add HTML to be displayed at the very top of the page, above Flarum's own header."
@@ -66,9 +66,9 @@ core:
 
     # These translations are used in the Edit Group modal dialog.
     edit_group:
-      color_label: Color
-      delete_button: Delete Group
-      delete_confirmation: "Are you sure you want to delete this group? The group members will NOT be deleted."
+      color_label: Barva
+      delete_button: Smazat skupinu
+      delete_confirmation: "Jsi si jistý, že chceš smazat tuto skupinu? Její členi nebudou smazáni."
       icon_label: Icon
       icon_text: "Enter the name of any <a>FontAwesome</a> icon class, <em>without</em> the <code>fa-</code> prefix."
       name_label: Name
@@ -195,11 +195,11 @@ core:
 
     # These translations are used by the composer when starting a discussion.
     composer_discussion:
-      body_placeholder: Write a Post...
-      discard_confirmation: "You have not posted your discussion. Do you wish to discard it?"
-      submit_button: Post Discussion
+      body_placeholder: Napsat příspěvek...
+      discard_confirmation: "Neveřejnil jsi svou diskuzi. Chceš ji zahodit?"
+      submit_button: Zveřejnit diskuzi
       title: => core.ref.start_a_discussion
-      title_placeholder: Discussion Title
+      title_placeholder: Jméno diskuze
 
     # These translations are used by the composer when editing a post.
     composer_edit:
@@ -217,21 +217,21 @@ core:
 
     # These translations are used by the discussion control buttons.
     discussion_controls:
-      cannot_reply_button: Can't Reply
-      cannot_reply_text: You don't have permission to reply to this discussion.
+      cannot_reply_button: Nelze odpovědět
+      cannot_reply_text: V této diskuzi nemůžeš odpovídat.
       delete_button: => core.ref.delete
-      delete_confirmation: "Are you sure you want to delete this discussion?"
+      delete_confirmation: "Opravdu chceš tuto diskuzi smazat?"
       delete_forever_button: => core.ref.delete_forever
-      log_in_to_reply_button: Log In to Reply
+      log_in_to_reply_button: Přihlásit se a odpovědět
       rename_button: => core.ref.rename
       reply_button: => core.ref.reply
       restore_button: => core.ref.restore
 
     # These translations are used in the discussion list.
     discussion_list:
-      empty_text: It looks like there are no discussions here.
+      empty_text: Nebyly nalezeny žádné diskuze.
       load_more_button: => core.ref.load_more
-      mark_as_read_tooltip: Mark as Read
+      mark_as_read_tooltip: Označit jako přečtené
       replied_text: "{username} odpověděl {ago}"
       started_text: "{username} začal {ago}"
 
@@ -384,9 +384,9 @@ core:
 
     # These translations are found on the user profile page (admin function).
     user_controls:
-      button: Controls
+      button: Upravit
       delete_button: => core.ref.delete
-      delete_confirmation: "Are you sure you want to delete this user? All of the user's posts will be deleted."
+      delete_confirmation: "Opravdu chceš uživatele smazat? Budou odstraněny všechny jeho příspěvky."
       edit_button: => core.ref.edit
 
     # These translations are used in the alert that is shown when a new user has not confirmed their email address.
@@ -459,43 +459,52 @@ core:
 
     # These translations are used in emails sent when users register new accounts.
     activate_account:
-      subject: Activate Your New Account
+      subject: Aktivace nového účtu
       body: |
-        Hey {username}!
+        Ahoj, {username}.
 
-        Someone (hopefully you!) has signed up to {forum} with this email address.
+        Někdo se na {forum} registroval touto email adresou.
 
-        If this was you, simply click the following link and your account will be activated:
+        Pokud jsi to byl/a ty, klikni na tento odkaz:
         {url}
 
-        If you did not sign up, please ignore this email.
+        Pokud o ničem takovém nevíš, tento email ignoruj.
+        
+        Doufáme, že se ti u nás bude líbit!
+        
+        – Tým Ostrova tučňáků
 
     # These translations are used in emails sent when users change their email address.
     confirm_email:
-      subject: Confirm Your New Email Address
+      subject: Potvrzení nového emailu
       body: |
-        Hey {username}!
+        Ahoj, {username}!
 
-        Someone (hopefully you!) has changed their email address on {forum} to this one.
+        Někdo na {forum} změnil svou emailovou adresu na tu tvoji.
 
-        If this was you, simply click the following link and your email will be confirmed:
+        Pokud jsi to byl/a ty, tak klikni na odkaz níže a potvrď to:
         {url}
 
-        If this was not you, please ignore this email.
+        Pokud to udělal někdo jiný, tento email ignotuj.
+        
+         – Tým Ostrova tučňáků
 
     # These translations are used in emails sent when users ask to reset their passwords.
     reset_password:
       subject: => core.ref.reset_your_password
       body: |
-        Hey {username}!
+        Ahoj, {username}.
 
-        Someone (hopefully you!) has submitted a forgotten password request for your account on {forum}.
+        Někdo na {forum} zažádal o reset hesla.
 
-        If this was you, click the following link to reset your password:
+        Pokud jsi to byl/a ty, klikni na odkaz níže a resetuj si ho:
         {url}
 
-        If you do not wish to change your password, just ignore this email and nothing will happen.
-
+       Pokud si ho nechceš změnit, tento email ignoruj.
+       
+       Dobře si nové heslo zapamatuj
+       
+        – Tým Ostrova tučňáků
   ##
   # REUSED TRANSLATIONS - These keys should not be used directly in code!
   ##
