@@ -12,20 +12,20 @@ core:
       developer_text: "If you're a developer, you can <a>read the docs</a> and have a go at building your own extensions."
       install_text: "In the meantime, you can look for extensions at the <a>Flarum Community site</a> and install them manually using Composer."
       temporary_text: "One day in the not-too-distant future, this dialog will allow you to add an extension to your forum with ease. We're building an ecosystem as we speak!"
-      title: Add Extension
+      title: Přidat rozšíření
 
     # These translations are used in the Appearance page.
     appearance:
-      colored_header_label: Barevný header
+      colored_header_label: Barevné záhlaví
       colors_heading: Barvy
       colors_text: "Choose two colors to theme your forum with. The first will be used as a highlight color, while the second will be used to style background elements."
-      custom_header_heading: Custom Header
+      custom_header_heading: Vlastní záhlaví
       custom_header_text: "Add HTML to be displayed at the very top of the page, above Flarum's own header."
-      custom_styles_heading: Custom Styles
+      custom_styles_heading: Vlastní styly
       custom_styles_text: Customize your forum's appearance by adding your own LESS/CSS code to be applied on top of Flarum's default styles.
       dark_mode_label: Dark Mode
-      edit_css_button: Edit Custom CSS
-      edit_header_button: Edit Custom Header
+      edit_css_button: Upravit vlastní CSS
+      edit_header_button: Upravit vlastní záhlaví
       enter_hex_message: Please enter a hexadecimal color code.
       favicon_heading: Favicon
       favicon_text: Upload an image to be displayed as the forum's shortcut icon.
@@ -36,15 +36,15 @@ core:
     # These translations are used in the Basics page.
     basics:
       all_discussions_label: => core.ref.all_discussions
-      default_language_heading: Default Language
-      forum_description_heading: Forum Description
+      default_language_heading: Výchozí jazyk
+      forum_description_heading: Popis fóra
       forum_description_text: Enter a short sentence or two that describes your community. This will appear in the meta tag and show up in search engines.
-      forum_title_heading: Forum Title
-      home_page_heading: Home Page
+      forum_title_heading: Název fóra
+      home_page_heading: Hlavní stránka
       home_page_text: "Choose the page which users will first see when they visit your forum. If entering a custom value, use the path relative to the forum root."
       saved_message: Your changes were saved.
       submit_button: => core.ref.save_changes
-      welcome_banner_heading: Welcome Banner
+      welcome_banner_heading: Uvítací banner
       welcome_banner_text: Configure the text that displays in the banner on the All Discussions page. Use this to welcome guests to your forum.
 
     # These translations are used in the Dashboard page.
@@ -62,48 +62,48 @@ core:
     edit_css:
       customize_text: "Customize your forum's appearance by adding your own LESS/CSS code to be applied on top of Flarum's <a>default styles</a>."
       submit_button: => core.ref.save_changes
-      title: Edit Custom CSS
+      title: Úprava vlastního CSS
 
     # These translations are used in the Edit Group modal dialog.
     edit_group:
       color_label: Barva
       delete_button: Smazat skupinu
       delete_confirmation: "Jsi si jistý, že chceš smazat tuto skupinu? Její členi nebudou smazáni."
-      icon_label: Icon
+      icon_label: Ikona
       icon_text: "Enter the name of any <a>FontAwesome</a> icon class, <em>without</em> the <code>fa-</code> prefix."
-      name_label: Name
-      plural_placeholder: Plural (e.g. Mods)
-      singular_placeholder: Singular (e.g. Mod)
+      name_label: Název
+      plural_placeholder: Plurál (např. Správci)
+      singular_placeholder: Singulár (např. Správce)
       submit_button: => core.ref.save_changes
-      title: Create Group
+      title: Vytvořit skupinu
 
     # These translations are used in the Edit Custom Header modal dialog.
     edit_header:
       customize_text: "Add HTML to be displayed at the very top of the page, above Flarum's own header."
       submit_button: => core.ref.save_changes
-      title: Edit Custom Header
+      title: Úprava vlastního záhlaví
 
     # These translations are used in the email page of the admin interface.
     email:
-      account_heading: SMTP Account
-      addresses_heading: Addresses
+      account_heading: SMTP účet
+      addresses_heading: Adresy
       driver_label: Driver
-      encryption_label: Encryption
-      from_label: Sender
+      encryption_label: Šifrování
+      from_label: Odesílatel
       heading: => core.ref.email
-      host_label: Host
+      host_label: Server
       password_label: => core.ref.password
       port_label: Port
-      server_heading: SMTP Server
+      server_heading: SMTP srver
       submit_button: => core.ref.save_changes
       text: Configure the SMTP settings and addresses your forum will use to send email.
       username_label: => core.ref.username
 
     # These translations are used in the Extensions page.
     extensions:
-      add_button: Add Extension
+      add_button: Přidat rozšíření
       settings_button: => core.ref.settings
-      uninstall_button: Uninstall
+      uninstall_button: Odinstalovat
 
     # These translations are used in the session dropdown menu.
     header:
@@ -114,7 +114,7 @@ core:
       title: Prosím čekejte…
     # These translations are used in the navigation bar.
     nav:
-      appearance_button: Appearance
+      appearance_button: Vzhled
       appearance_text: "Customize your forum's colors, logos, and other variables."
       basics_button: Basics
       basics_text: "Set your forum title, language, and other basic settings."
@@ -122,7 +122,7 @@ core:
       dashboard_text: Your forum at a glance.
       email_button: => core.ref.email
       email_text: "Configure your forum's email settings."
-      extensions_button: Extensions
+      extensions_button: Oprávnění
       extensions_text: Add extra functionality to your forum and make it your own.
       permissions_button: Permissions
       permissions_text: Configure who can see and do what.
@@ -165,8 +165,8 @@ core:
 
     # These translations are used in image upload buttons.
     upload_image:
-      remove_button: Remove
-      upload_button: Choose an Image...
+      remove_button: Odebrat
+      upload_button: Zvolit obrázek…
 
   # Translations in this namespace are used by the forum user interface.
   forum:
@@ -182,21 +182,21 @@ core:
 
     # These translations are used in the Change Password modal dialog.
     change_password:
-      send_button: Send Password Reset Email
+      send_button: Odeslat e-mail pro obnou hesla
       text: Click the button below and check your email for a link to change your password.
       title: => core.ref.change_password
 
     # These translations are used by the composer controls.
     composer:
-      close_tooltip: Close
-      exit_full_screen_tooltip: Exit Full Screen
-      full_screen_tooltip: Full Screen
-      minimize_tooltip: Minimize
+      close_tooltip: Zavřít
+      exit_full_screen_tooltip: Ukončit režim celé obrazovky
+      full_screen_tooltip: Celá obrazovka
+      minimize_tooltip: Minimalizovat
 
     # These translations are used by the composer when starting a discussion.
     composer_discussion:
-      body_placeholder: Napsat příspěvek...
-      discard_confirmation: "Neveřejnil jsi svou diskuzi. Chceš ji zahodit?"
+      body_placeholder: Napsat příspěvek…
+      discard_confirmation: "Nezveřejnil jsi svou diskuzi. Chceš ji zahodit?"
       submit_button: Zveřejnit diskuzi
       title: => core.ref.start_a_discussion
       title_placeholder: Jméno diskuze
@@ -204,7 +204,7 @@ core:
     # These translations are used by the composer when editing a post.
     composer_edit:
       discard_confirmation: "Neuložil jsi své změny. Chceš je zahodit?"
-      post_link: "Příspšvek č. {number} v {discussion}"
+      post_link: "Příspěvek č. {number} v tématu {discussion}"
       submit_button: => core.ref.save_changes
 
     # These translations are used by the composer when replying to a discussion.
@@ -245,7 +245,7 @@ core:
       password_label: => core.ref.password
       set_password_label: Set new password
       submit_button: => core.ref.save_changes
-      title: Upravit účet
+      title: Úprava účtu
       username_heading: => core.ref.username
       username_label: => core.ref.username
 
@@ -307,7 +307,7 @@ core:
 
     # These translations are used by tooltips displayed for individual posts.
     post:
-      edited_text: Edited
+      edited_text: Upraveno
       edited_tooltip: "{username} upravil {ago}"
       number_tooltip: "Příspěvek č. {number}"
 
@@ -320,7 +320,7 @@ core:
 
     # These translations are used in the scrubber to the right of the post stream.
     post_scrubber:
-      now_link: Now
+      now_link: Současnost
       original_post_link: Úvodní příspěvek
       unread_text: "{count} nepřečtený|{count} nepřečtené|{count} nepřečtených"
       viewing_text: "{index} z {count} příspěvku|{index} ze {count} příspěvků|{index} z {count} příspěvků"
@@ -331,7 +331,7 @@ core:
       discussion_renamed_text: "{username} změnil nadpis na {new}."
       load_more_button: => core.ref.load_more
       reply_placeholder: => core.ref.write_a_reply
-      time_lapsed_text: "{period} později"
+      time_lapsed_text: "o {period} později"
 
     # These translations are used by the rename discussion modal.
     rename_discussion:
@@ -471,8 +471,6 @@ core:
         Pokud o ničem takovém nevíš, tento email ignoruj.
         
         Doufáme, že se ti u nás bude líbit!
-        
-        – Tým Ostrova tučňáků
 
     # These translations are used in emails sent when users change their email address.
     confirm_email:
@@ -486,8 +484,6 @@ core:
         {url}
 
         Pokud to udělal někdo jiný, tento email ignotuj.
-        
-         – Tým Ostrova tučňáků
 
     # These translations are used in emails sent when users ask to reset their passwords.
     reset_password:
@@ -500,11 +496,10 @@ core:
         Pokud jsi to byl/a ty, klikni na odkaz níže a resetuj si ho:
         {url}
 
-       Pokud si ho nechceš změnit, tento email ignoruj.
-       
-       Dobře si nové heslo zapamatuj
-       
-        – Tým Ostrova tučňáků
+        Pokud si ho nechceš změnit, tento email ignoruj.
+        
+        Dobře si nové heslo zapamatuj
+
   ##
   # REUSED TRANSLATIONS - These keys should not be used directly in code!
   ##
