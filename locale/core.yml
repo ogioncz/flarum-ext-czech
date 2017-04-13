@@ -196,7 +196,7 @@ core:
     # These translations are used by the composer when starting a discussion.
     composer_discussion:
       body_placeholder: Napsat příspěvek…
-      discard_confirmation: "Nezveřejnil jsi své téfma. Chceš je zahodit?"
+      discard_confirmation: "Nezveřejnil jsi své téma. Chceš je zahodit?"
       submit_button: Zveřejnit téma
       title: => core.ref.start_a_discussion
       title_placeholder: Téma
