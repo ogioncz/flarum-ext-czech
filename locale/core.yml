@@ -19,13 +19,16 @@ core:
       colored_header_label: Barevné záhlaví
       colors_heading: Barvy
       colors_text: "Choose two colors to theme your forum with. The first will be used as a highlight color, while the second will be used to style background elements."
+      custom_footer_heading: Vlastní zápatí
+      custom_footer_text: => core.ref.custom_footer_text
       custom_header_heading: Vlastní záhlaví
-      custom_header_text: "Add HTML to be displayed at the very top of the page, above Flarum's own header."
+      custom_header_text: => core.ref.custom_header_text
       custom_styles_heading: Vlastní styly
       custom_styles_text: Customize your forum's appearance by adding your own LESS/CSS code to be applied on top of Flarum's default styles.
       dark_mode_label: Dark Mode
       edit_css_button: Upravit vlastní CSS
-      edit_header_button: Upravit vlastní záhlaví
+      edit_footer_button: => core.ref.custom_footer_title
+      edit_header_button: => core.ref.custom_header_title
       enter_hex_message: Please enter a hexadecimal color code.
       favicon_heading: Favicon
       favicon_text: Upload an image to be displayed as the forum's shortcut icon.
@@ -41,22 +44,17 @@ core:
       forum_description_text: Enter a short sentence or two that describes your community. This will appear in the meta tag and show up in search engines.
       forum_title_heading: Název fóra
       home_page_heading: Hlavní stránka
-      home_page_text: "Choose the page which users will first see when they visit your forum. If entering a custom value, use the path relative to the forum root."
+      home_page_text: Choose the page which users will first see when they visit your forum.
       saved_message: Your changes were saved.
+      show_language_selector_label: Show language selector
       submit_button: => core.ref.save_changes
       welcome_banner_heading: Uvítací banner
       welcome_banner_text: Configure the text that displays in the banner on the All Discussions page. Use this to welcome guests to your forum.
 
     # These translations are used in the Dashboard page.
     dashboard:
-      beta_warning_text: "This <strong>beta software</strong> is provided primarily so that you can help us test it and make it better; it should not be used in production."
-      contributing_text: "Want to look for bugs and contribute? Read the <a>Contributing docs</a>."
-      extension_text: "Interested in developing extensions? Read the <a>Extension docs</a>."
-      features_text: "Got an idea to improve a feature? Tell us about it under the <a>Features tag</a>."
-      support_text: "Found a bug? Please report it in our forum, under the <a>Support tag</a>."
-      troubleshooting_text: "Having problems? Follow the instructions in the <a>Troubleshooting docs</a>."
-      version_text: "Thanks for trying out Flarum! You are running version {version}."
-      welcome_text: "Welcome to Flarum Beta!"
+      clear_cache_button: Clear Cache
+      tools_button: Tools
 
     # These translations are used in the Edit Custom CSS modal dialog.
     edit_css:
@@ -64,13 +62,19 @@ core:
       submit_button: => core.ref.save_changes
       title: Úprava vlastního CSS
 
+    # These translations are used in the Edit Custom Footer modal dialog.
+    edit_footer:
+      customize_text: => core.ref.custom_footer_text
+      submit_button: => core.ref.save_changes
+      title: => core.ref.custom_footer_title
+
     # These translations are used in the Edit Group modal dialog.
     edit_group:
-      color_label: Barva
+      color_label: core.ref.color
       delete_button: Smazat skupinu
       delete_confirmation: "Jsi si jistý, že chceš smazat tuto skupinu? Její členi nebudou smazáni."
       icon_label: Ikona
-      icon_text: "Enter the name of any <a>FontAwesome</a> icon class, <em>without</em> the <code>fa-</code> prefix."
+      icon_text: "Enter the name of any <a>FontAwesome</a> icon class, <em>including</em> the <code>fas fa-</code> prefix."
       name_label: Název
       plural_placeholder: Plurál (např. Správci)
       singular_placeholder: Singulár (např. Správce)
@@ -79,9 +83,9 @@ core:
 
     # These translations are used in the Edit Custom Header modal dialog.
     edit_header:
-      customize_text: "Add HTML to be displayed at the very top of the page, above Flarum's own header."
+      customize_text: => core.ref.custom_header_text
       submit_button: => core.ref.save_changes
-      title: Úprava vlastního záhlaví
+      title: => core.ref.custom_header_title
 
     # These translations are used in the email page of the admin interface.
     email:
@@ -129,13 +133,14 @@ core:
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
-      allow_renaming_label: Allow renaming
       allow_post_editing_label: Allow post editing
+      allow_renaming_label: Allow renaming
       create_heading: Create
       delete_discussions_forever_label: Delete discussions forever
       delete_discussions_label: Delete discussions
       delete_posts_forever_label: Delete posts forever
-      edit_and_delete_posts_label: Edit and delete posts
+      delete_posts_label: Delete posts
+      edit_posts_label: Edit posts
       global_heading: Global
       moderate_heading: Moderate
       new_group_button: New Group
@@ -146,7 +151,9 @@ core:
       sign_up_label: Sign up
       start_discussions_label: Start discussions
       view_discussions_label: View discussions
+      view_last_seen_at_label: View user last seen time
       view_post_ips_label: View post IP addresses
+      view_user_list_label: View user list
 
     # These translations are used in the dropdown menus on the Permissions page.
     permissions_controls:
@@ -165,7 +172,7 @@ core:
 
     # These translations are used in image upload buttons.
     upload_image:
-      remove_button: Odebrat
+      remove_button: => core.ref.remove
       upload_button: Zvolit obrázek…
 
   # Translations in this namespace are used by the forum user interface.
@@ -173,8 +180,8 @@ core:
 
     # These translations are used in the Change Email modal dialog.
     change_email:
-      confirmation_message: => core.ref.confirmation_email_sent
       confirm_password_placeholder: => core.ref.confirm_password
+      confirmation_message: => core.ref.confirmation_email_sent
       dismiss_button: => core.ref.okay
       incorrect_password_message: The password you entered is incorrect.
       submit_button: => core.ref.save_changes
@@ -192,6 +199,7 @@ core:
       exit_full_screen_tooltip: Ukončit režim celé obrazovky
       full_screen_tooltip: Celá obrazovka
       minimize_tooltip: Minimalizovat
+      preview_tooltip: Náhled
 
     # These translations are used by the composer when starting a discussion.
     composer_discussion:
@@ -262,6 +270,7 @@ core:
     # These translations are used in the header and session dropdown menu.
     header:
       admin_button: Administrace
+      back_to_index_tooltip: Zpět na seznam diskusí
       log_in_link: => core.ref.log_in
       log_out_button: => core.ref.log_out
       profile_button: Profil
@@ -291,7 +300,7 @@ core:
       forgot_password_link: "Zapomenuté heslo?"
       invalid_login_message: Tvé přihlašovací údaje nejsou správné.
       password_placeholder: => core.ref.password
-      remember_me_label: Zapamatuj si mě na dva týdny
+      remember_me_label: Zapamatuj si mě
       sign_up_text: "Nemáš účet? <a>Zaregistruj se</a>"
       submit_button: => core.ref.log_in
       title: => core.ref.log_in
@@ -335,14 +344,14 @@ core:
 
     # These translations are used by the rename discussion modal.
     rename_discussion:
-      title: Enter a new title for this discussion
       submit_button: => core.ref.rename
+      title: Rename Discussion
 
     # These translations are used by the search results dropdown list.
     search:
       all_discussions_button: 'Hledat „{query}“ ve všech vláknech'
       discussions_heading: => core.ref.discussions
-      users_heading: Uživatelé
+      users_heading: => core.ref.users
 
     # These translations are used in the Settings page.
     settings:
@@ -359,8 +368,8 @@ core:
 
     # These translations are used in the Sign Up modal dialog.
     sign_up:
-      email_placeholder: => core.ref.email
       dismiss_button: => core.ref.okay
+      email_placeholder: => core.ref.email
       log_in_text: "Již máš účet? <a>Přihlas se</a>"
       password_placeholder: => core.ref.password
       submit_button: => core.ref.sign_up
@@ -370,7 +379,7 @@ core:
 
     # These translations are used in the user profile page and profile popup.
     user:
-      avatar_remove_button: Odebrat
+      avatar_remove_button: => core.ref.remove
       avatar_upload_button: Nahrát
       avatar_upload_tooltip: Nahrát nový avatar
       bio_placeholder: Napiš něco o sobě
@@ -378,8 +387,9 @@ core:
       in_discussion_text: "V {discussion}"
       joined_date_text: "Připojil se {ago}"
       online_text: On-line
+      posts_empty_text: Zdá se, že tu nejsou žádné příspěvky.
+      posts_link: => core.ref.posts
       posts_load_more_button: => core.ref.load_more
-      posts_link: Příspěvky
       settings_link: => core.ref.settings
 
     # These translations are found on the user profile page (admin function).
@@ -402,10 +412,6 @@ core:
     badge:
       hidden_tooltip: Hidden
 
-    # These translations are used to modify usernames.
-    username:
-      deleted_text: "[smazaný]"
-
     # These translations are displayed as error messages.
     error:
       generic_message: "Jejda, něco se pokazilo. Obnov prosím stránku a zkus to znovu."
@@ -424,30 +430,49 @@ core:
       three_text: "{first}, {second} a {third}"
       two_text: "{first} a {second}"
 
+    # These translations are used to modify usernames.
+    username:
+      deleted_text: "[smazaný]"
+
   # Translations in this namespace are used in views other than Flarum's normal JS client.
   views:
 
     # Translations in this namespace are displayed by the basic HTML content loader.
     content:
       javascript_disabled_message: This site is best viewed in a modern browser with JavaScript enabled.
-      load_error_message: Something went wrong while trying to load the full version of this site.
+      load_error_message: Something went wrong while trying to load the full version of this site. Try hard-refreshing this page to fix the error.
       loading_text: Načítání…
 
     # Translations in this namespace are displayed in the basic HTML discussion view.
     discussion:
       next_page_button: => core.ref.next_page
-      previous_page_button: Předchozí stránka
+      previous_page_button: => core.ref.previous_page
+
+    # Translations in this namespace are displayed when Flarum encounters an error.
+    error:
+      403_message: You do not have permission to access this page.
+      404_message: The page you requested could not be found.
+      404_return_link: "Return to {forum}"
+      500_message: An error occurred while trying to load this page.
+      503_message: "{forum} is undergoing maintenance. Thanks for your patience!"
 
     # Translations in this namespace are displayed by the basic HTML discussion index.
     index:
       all_discussions_heading: => core.ref.all_discussions
       next_page_button: => core.ref.next_page
+      previous_page_button: => core.ref.previous_page
+
+    # Translations in this namespace are displayed by the Log Out confirmation interface.
+    log_out:
+      log_out_button: => core.ref.log_out
+      log_out_confirmation: "Are you sure you want to log out of {forum}?"
+      title: => core.ref.log_out
 
     # Translations in this namespace are displayed by the Reset Password interface.
-    reset:
-      confirm_password_label: => core.ref.confirm_password
-      password_label: => core.ref.password
-      submit_button: Obnovit heslo
+    reset_password:
+      confirm_password_label: Potvrzení nového hesla
+      new_password_label: Nové heslo
+      submit_button: => core.ref.save_changes
       title: => core.ref.reset_your_password
 
   # Translations in this namespace are used in messages output by the API.
@@ -509,11 +534,16 @@ core:
     all_discussions: Všechny diskuse
     change_email: Změnit e-mail
     change_password: Změnit heslo
+    color: Barva                                 # Referenced by flarum-tags.yml
     confirm_password: Potvrdit heslo
     confirmation_email_sent: "Poslali jsme potvrzovací zprávu na adresu {email}. Pokud brzy nedorazí, zkus se kouknout do složky s nevyžádanou poštou."
+    custom_footer_text: Add HTML to be displayed at the very bottom of the page.
+    custom_footer_title: Edit Custom Footer
+    custom_header_text: "Add HTML to be displayed at the very top of the page, above Flarum's own header."
+    custom_header_title: Edit Custom Header
     delete: Smazat
     delete_forever: Smazat navždy
-    discussions: Diskuse
+    discussions: Diskuse                         # Referenced by flarum-statistics.yml
     edit: Upravit
     email: E-Mail
     load_more: Načíst další
@@ -524,6 +554,9 @@ core:
     notifications: Oznámení
     okay: OK                                     # Referenced by flarum-tags.yml
     password: Heslo
+    posts: Příspěvky                             # Referenced by flarum-statistics.yml
+    previous_page: Předchozí stránka
+    remove: Odstranit
     rename: Přejmenovat
     reply: Odpovědět                             # Referenced by flarum-mentions.yml
     reset_your_password: Obnovit heslo
@@ -533,6 +566,7 @@ core:
     sign_up: Registrovat se
     some_others: "{count} další|{count} další|{count} dalších"   # Referenced by flarum-likes.yml, flarum-mentions.yml
     start_a_discussion: Začít diskutovat
+    users: Uživatelé                             # Referenced by flarum-statistics.yml
     username: Přezdívka
     write_a_reply: Odpovědět…
     you: Ty                                      # Referenced by flarum-likes.yml, flarum-mentions.yml

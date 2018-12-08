@@ -13,7 +13,7 @@ flarum-tags:
 
     # These translations are used in the Edit Tag modal dialog.
     edit_tag:
-      color_label: Barva
+      color_label: core.ref.color
       delete_tag_button: Smazat štítek
       delete_tag_confirmation: "Opravdu chceš smazat tento štítek? Témata jím označená smazána NEBUDOU."
       description_label: Popis
@@ -71,6 +71,9 @@ flarum-tags:
     discussion_controls:
       edit_tags_button: Upravit štítky
 
+    header:
+      back_to_tags_tooltip: Back to Tag List
+
     # These translations are used on the index page, peripheral to the discussion list.
     index:
       more_link: Více…
@@ -79,8 +82,8 @@ flarum-tags:
 
     # These translations are displayed between posts in the post stream.
     post_stream:
-      added_tags_text: "{username} přidal {tagsAdded}."
       added_and_removed_tags_text: "{username} přidal {tagsAdded} a odebral {tagsRemoved}."
+      added_tags_text: "{username} přidal {tagsAdded}."
       removed_tags_text: "{username} odebral {tagsRemoved}."
       tags_text: "štítek {tags}|štítky {tags}"
 

@@ -1,6 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="900" height="600">
-	<rect width="900" height="600" fill="#d7141a"/>
-	<rect width="900" height="300" fill="#fff"/>
-	<path d="M 450,300 0,0 V 600 z" fill="#11457e"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="1200" height="600">
+  <clipPath id="a">
+    <path d="M30 15h30v15zv15H0zH0V0zV0h30z"/>
+  </clipPath>
+  <path d="M0 0v30h60V0z" fill="#00247d"/>
+  <path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/>
+  <path d="M0 0l60 30m0-30L0 30" clip-path="url(#a)" stroke="#cf142b" stroke-width="4"/>
+  <path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/>
+  <path d="M30 0v30M0 15h60" stroke="#cf142b" stroke-width="6"/>
 </svg>
