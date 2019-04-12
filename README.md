@@ -5,7 +5,7 @@
 Run the following command in the folder where Flarum is installed:
 
 ```shell
-composer require ogioncz/flarum-ext-czech
+composer require ogioncz/flarum-ext-czech:dev-master
 ```
 
 ---
