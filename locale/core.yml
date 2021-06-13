@@ -53,8 +53,8 @@ core:
 
     # These translations are used in the Dashboard page.
     dashboard:
-      clear_cache_button: Clear Cache
-      tools_button: Tools
+      clear_cache_button: Smazat Cache
+      tools_button: Nástroje
 
     # These translations are used in the Edit Custom CSS modal dialog.
     edit_css:
@@ -74,7 +74,7 @@ core:
       delete_button: Smazat skupinu
       delete_confirmation: "Jsi si jistý, že chceš smazat tuto skupinu? Její členi nebudou smazáni."
       icon_label: Ikona
-      icon_text: "Enter the name of any <a>FontAwesome</a> icon class, <em>including</em> the <code>fas fa-</code> prefix."
+      icon_text: "Vložte název <a>FontAwesome</a> ikony, <em>i s</em> <code>fas fa-</code> prefixem."
       name_label: Název
       plural_placeholder: Plurál (např. Správci)
       singular_placeholder: Singulár (např. Správce)
@@ -135,20 +135,20 @@ core:
     permissions:
       allow_post_editing_label: Allow post editing
       allow_renaming_label: Allow renaming
-      create_heading: Create
+      create_heading: Vytvořit
       delete_discussions_forever_label: Delete discussions forever
       delete_discussions_label: Delete discussions
       delete_posts_forever_label: Delete posts forever
       delete_posts_label: Delete posts
       edit_posts_label: Edit posts
-      global_heading: Global
-      moderate_heading: Moderate
-      new_group_button: New Group
+      global_heading: Globalní
+      moderate_heading: Moderovat
+      new_group_button: Nová skupina
       participate_heading: Participate
-      read_heading: Read
+      read_heading: Číst
       rename_discussions_label: Rename discussions
       reply_to_discussions_label: Reply to discussions
-      sign_up_label: Sign up
+      sign_up_label: Registrace
       start_discussions_label: Start discussions
       view_discussions_label: View discussions
       view_last_seen_at_label: View user last seen time
@@ -157,14 +157,14 @@ core:
 
     # These translations are used in the dropdown menus on the Permissions page.
     permissions_controls:
-      allow_indefinitely_button: Indefinitely
+      allow_indefinitely_button: Kdykoli
       allow_some_minutes_button: "For {count} minute|For {count} minutes"
-      allow_ten_minutes_button: For 10 minutes
-      allow_until_reply_button: Until next reply
-      everyone_button: Everyone
+      allow_ten_minutes_button: Na 10 minut
+      allow_until_reply_button: Do další odpovědi
+      everyone_button: Všichni
       members_button: => core.group.members
-      signup_closed_button: Closed
-      signup_open_button: Open
+      signup_closed_button: Uzavřeno
+      signup_open_button: Otevřeno
 
     # These translations are used in the Settings modal dialog.
     settings:
@@ -345,7 +345,7 @@ core:
     # These translations are used by the rename discussion modal.
     rename_discussion:
       submit_button: => core.ref.rename
-      title: Rename Discussion
+      title: Přejmonvat diskuzi
 
     # These translations are used by the search results dropdown list.
     search:
@@ -410,19 +410,19 @@ core:
 
     # These translations are displayed as tooltips for discussion badges.
     badge:
-      hidden_tooltip: Hidden
+      hidden_tooltip: Schované
 
     # These translations are displayed as error messages.
     error:
       generic_message: "Jejda, něco se pokazilo. Obnov prosím stránku a zkus to znovu."
-      not_found_message: The requested resource was not found.
-      permission_denied_message: You do not have permission to do that.
-      rate_limit_exceeded_message: You're going a little too quickly. Please try again in a few seconds.
+      not_found_message: Požadovaný materiál nebyl nalezen
+      permission_denied_message: Na tuto operaci nemáte dostatečná práva.
+      rate_limit_exceeded_message: Jste moc rychlý, zpomalte
 
     # These translations are used as suffixes when abbreviating numbers.
     number_suffix:
-      kilo_text: K
-      mega_text: M
+      kilo_text: " tisíc"
+      mega_text: " miliónů"
 
     # These translations are used to punctuate a series of items.
     series:
@@ -450,11 +450,11 @@ core:
 
     # Translations in this namespace are displayed when Flarum encounters an error.
     error:
-      403_message: You do not have permission to access this page.
-      404_message: The page you requested could not be found.
-      404_return_link: "Return to {forum}"
-      500_message: An error occurred while trying to load this page.
-      503_message: "{forum} is undergoing maintenance. Thanks for your patience!"
+      403_message: Nemáte dostatečná práva na zobrazení této stránky
+      404_message: Stránka nebyla nalezena
+      404_return_link: "Zpět na {forum}"
+      500_message: Objevila se chyba na straně serveru
+      503_message: "{forum} je nyní v režimu opravy. Počkejte prosím"
 
     # Translations in this namespace are displayed by the basic HTML discussion index.
     index:
@@ -465,7 +465,7 @@ core:
     # Translations in this namespace are displayed by the Log Out confirmation interface.
     log_out:
       log_out_button: => core.ref.log_out
-      log_out_confirmation: "Are you sure you want to log out of {forum}?"
+      log_out_confirmation: "Opravdu se chcete odhlásit z {forum}?"
       title: => core.ref.log_out
 
     # Translations in this namespace are displayed by the Reset Password interface.
@@ -494,7 +494,7 @@ core:
         {url}
 
         Pokud o ničem takovém nevíš, tento email ignoruj.
-        
+
         Doufáme, že se ti u nás bude líbit!
 
     # These translations are used in emails sent when users change their email address.
@@ -522,7 +522,7 @@ core:
         {url}
 
         Pokud si ho nechceš změnit, tento email ignoruj.
-        
+
         Dobře si nové heslo zapamatuj
 
   ##
@@ -538,9 +538,9 @@ core:
     confirm_password: Potvrdit heslo
     confirmation_email_sent: "Poslali jsme potvrzovací zprávu na adresu {email}. Pokud brzy nedorazí, zkus se kouknout do složky s nevyžádanou poštou."
     custom_footer_text: Add HTML to be displayed at the very bottom of the page.
-    custom_footer_title: Edit Custom Footer
+    custom_footer_title: Upravit vlastní zápatí
     custom_header_text: "Add HTML to be displayed at the very top of the page, above Flarum's own header."
-    custom_header_title: Edit Custom Header
+    custom_header_title: Upravit vlastní hlavičku
     delete: Smazat
     delete_forever: Smazat navždy
     discussions: Diskuse                         # Referenced by flarum-statistics.yml
