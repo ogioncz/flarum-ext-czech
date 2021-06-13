@@ -1,12 +1,6 @@
 # Czech Language Pack for Flarum
 
-## Installation
-
-Run the following command in the folder where Flarum is installed:
-
-```shell
-composer require ogioncz/flarum-ext-czech:dev-master
-```
+**This extension is no longer maintained. Please switch to [madnest/flarum-lang-czech](https://github.com/madnest/flarum-lang-czech).**
 
 ---
 
